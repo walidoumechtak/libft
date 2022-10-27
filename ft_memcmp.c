@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:13:00 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 17:34:47 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/27 22:03:10 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,26 +30,4 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	}
 	return (0);
-}
-/*
-#include <string.h>
-#include <stdio.h>
-int main()
-{
-	int c1[] = {260,2,3};
-	int c2[] = {4,5,6};
-	printf("me : %d \n", ft_memcmp(c1,c2, 5));
-	00000000 00000000 00000001 00000100
-	00000000 00000000 00000000 00000100
-	1-0 = 1
-	printf("%d", memcmp(c1,c2, 5));
-}*/
-
-
-int main()
-{
-	char c[] = "a";
-	char d[] = "w";
-	printf("%d", ft_memcmp(c, d, 3));
-	
 }

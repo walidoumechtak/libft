@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 10:21:57 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 16:25:11 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/27 22:02:47 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	dst[len_dest + i] = '\0';
 	return (len_src + len_dest);
-}
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char dest[10] = "hello";
-	char  srrc[] = "abc";
-	
-	printf("%zu \n", strlcat(dest, srrc, 10)); 
-	printf("%s", dest);
 }

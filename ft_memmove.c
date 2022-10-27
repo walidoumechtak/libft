@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:46:57 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/26 15:43:13 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/27 22:03:13 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,4 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	 		d[len] = s[len];
 	 }
 	return (dst);
-}
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char c1[] = "oumechtak";
-	char c2[] = "oumechtak";
-	printf(" me : %s \n", ft_memmove(c1+3, c1, 5));
-	printf(" nn : %s", memmove(c2+3, c2, 5));
 }
