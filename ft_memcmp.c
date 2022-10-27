@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:13:00 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 03:50:56 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/27 17:34:47 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
+		if(ss1[i] < ss2[i])
+			return (-1);
 		if (ss1[i] != ss2[i])
 			return (ss1[i] - ss2[i]);
 		i++;
@@ -46,6 +48,8 @@ int main()
 
 int main()
 {
-	printf("%d", memcmp("a", "w", 3));
+	char c[] = "a";
+	char d[] = "w";
+	printf("%d", ft_memcmp(c, d, 3));
 	
 }

@@ -6,9 +6,14 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/27 04:02:00 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/27 20:12:44 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+CC = gcc
+CC_FLAGS = -Wall -Wextra -Werror
+NAME = libft.a
+
 
 SRCS = ft_memset.c		\
 		ft_bzero.c		\
@@ -56,41 +61,26 @@ SRCSB =	ft_lstnew.c			\
 		$(SRCS)
 
 
-NAME = libft.a
 
-OBJS_DIR = objs/
 OBJS = $(SRCS:.c=.o)
-OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
 
 OBJSB = $(SRCSB:.c=.o)
-OBJECTS_BONUS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJSB))
-
-CC = gcc
-
-CC_FLAGS = -Wall -Wextra -Werror
-
-$(OBJS_DIR)%.o : %.c libft.h
-	@mkdir -p $(OBJS_DIR)
-	@echo "Compiling: $<"
-	@clang $(CC_FLAGS) -c $< -o $@
-
-$(NAME): $(OBJECTS_PREFIXED)
-	@ar r $(NAME) $(OBJECTS_PREFIXED)
-	@echo "Libft Done !"
 
 all: $(NAME)
 
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
+
+bonus: $(OBJS) $(OBJSB)
+	ar rc $(NAME) $(OBJS) $(OBJSB)
+
 clean:
-	rm -rf $(OBJS_DIR)
+	rm -rf $(OBJS) $(OBJSB) 
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-bonus: $(OBJECTS_BONUS_PREFIXED)
-	@ar r $(NAME) $(OBJECTS_BONUS_PREFIXED)
-	@echo "Libft Bonus Done !"
 
 git:
 	git add . && git commit -m "hhh" && git push
