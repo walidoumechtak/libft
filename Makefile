@@ -6,7 +6,7 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/26 20:31:43 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/27 04:02:00 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -91,3 +91,6 @@ re: fclean all
 bonus: $(OBJECTS_BONUS_PREFIXED)
 	@ar r $(NAME) $(OBJECTS_BONUS_PREFIXED)
 	@echo "Libft Bonus Done !"
+
+git:
+	git add . && git commit -m "hhh" && git push
