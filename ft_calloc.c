@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:42:15 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 22:03:05 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/28 16:15:07 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	// if (size && count >= SIZE_MAX / size)
-	// 	return (NULL);
+	if (size && count >= SIZE_MAX / size)
+		return (NULL);
 	ptr = malloc(count * size * sizeof(char));
 	if (!ptr)
 		return (NULL);

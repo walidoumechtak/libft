@@ -6,12 +6,12 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/27 20:12:44 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/28 11:02:55 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
-CC_FLAGS = -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 

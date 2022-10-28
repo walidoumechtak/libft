@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 21:42:52 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/28 10:32:06 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/28 16:30:59 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static unsigned long	result_f(char *str, int i, int signe)
 			return (0);
 		i++;
 	}
-	return ((int) result);
+	return ((int)result);
 }
 
 int	ft_atoi(const char *str)
@@ -51,15 +51,14 @@ int	ft_atoi(const char *str)
 	result = result_f((char *)str, i, signe);
 	return (result * signe);
 }
-/*
+
 #include <stdio.h>
 #include <string.h>
 
 int	main(void)
 {
-	char c[] = "-2147483648899999999999999";
+	char	*c = NULL;
 	//char c[] = "   --214";
-	printf("me : %d \n", ft_atoi(c));
+	//printf("me : %d \n", ft_atoi(c));
 	printf("not me : %d", atoi(c));
 }
-*/
