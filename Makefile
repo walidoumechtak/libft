@@ -6,7 +6,7 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/28 11:02:55 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/28 18:11:12 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 
-SRCS = ft_memset.c		\
+SRCS =  ft_memset.c		\
 		ft_bzero.c		\
 		ft_memcpy.c		\
 		ft_memmove.c 	\
@@ -70,6 +70,9 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
+	
+$(OBJS): $(SRCS) 
+	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: $(OBJS) $(OBJSB)
 	ar rc $(NAME) $(OBJS) $(OBJSB)
