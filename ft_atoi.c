@@ -6,23 +6,28 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 21:42:52 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 22:50:51 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/28 10:32:06 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
-static int	result_f(char *str, int i)
+static unsigned long	result_f(char *str, int i, int signe)
 {
-	int	result;
+	unsigned long	result;
 
 	result = 0;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
+		if (result > LONG_MAX && signe == 1)
+			return (-1);
+		else if (result > LONG_MAX && signe == -1)
+			return (0);
 		i++;
 	}
-	return (result);
+	return ((int) result);
 }
 
 int	ft_atoi(const char *str)
@@ -30,9 +35,7 @@ int	ft_atoi(const char *str)
 	int	i;
 	int	result;
 	int	signe;
-	unsigned long maxLong;
 
-	maxLong = 9223372036854775807;
 	result = 0;
 	i = 0;
 	signe = 1;
@@ -45,21 +48,18 @@ int	ft_atoi(const char *str)
 	}
 	else if (str[i] == '+')
 		i++;
-	result = result_f((char *)str, i);
-	if (result > maxLong && signe == 1)
-		return (0);
-	else if (result > maxLong && signe == -1)
-		return (-1);
+	result = result_f((char *)str, i, signe);
 	return (result * signe);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
 int	main(void)
 {
-	char c[] = "-214748364799999999999";
+	char c[] = "-2147483648899999999999999";
 	//char c[] = "   --214";
 	printf("me : %d \n", ft_atoi(c));
 	printf("not me : %d", atoi(c));
 }
+*/
