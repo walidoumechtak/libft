@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 21:21:43 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/28 23:30:49 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 07:57:34 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ int main(void)
 	p2 -> content = s;
 	p2 -> next = NULL;
 
-	ft_lstiter(p1, f);
+	ft_lstiter(NULL, NULL);
 	printf("%s", p1 -> content);
-}*/
+}
+*/

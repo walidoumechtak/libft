@@ -6,7 +6,7 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/28 18:11:12 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/29 08:46:32 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,9 +50,9 @@ SRCS =  ft_memset.c		\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
 
-SRCSB =	ft_lstnew.c			\
- 		ft_lstadd_front.c	\
-		ft_lstadd_back.c	\
+SRCSB =	ft_lstnew_bonus.c			\
+ 		ft_lstadd_front_bonus.c	\
+		ft_lstadd_back_bonus.c	\
 		ft_lstsize_bonus.c  \
 		ft_lstlast_bonus.c  \
 		ft_lstdelone_bonus.c \

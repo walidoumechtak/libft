@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 09:07:12 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/26 10:31:36 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 08:54:32 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,28 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new == NULL)
+	if (lst == NULL || new == NULL)
 		return ;
 	new->next = *lst;
 	*lst = new;
 }
+
+
+int main()
+{
+	t_list *ptr = ft_lstnew(ft_strdup("last"));
+	t_list *new = ft_lstnew(ft_strdup("first"));
+	
+	ft_lstadd_front(&ptr, new);
+
+	while (new != NULL)
+	{
+		printf("%s \n", new -> content);
+		new = new -> next;
+	}
+}
+
+
 /*
 #include <stdio.h>
 
