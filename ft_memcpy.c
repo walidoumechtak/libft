@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 09:46:07 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/26 14:57:54 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 07:51:03 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	if (dst == NULL && src == NULL)
 		return (NULL);
-	sr = (char *)src;
-	p = (char *)dst;
+	sr = src;
+	p = dst;
 	if (p == sr)
 		return (ft_strdup(""));
 	i = 0;
@@ -32,13 +32,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		p[i] = sr[i];
 		i++;
 	}
+	p[i] = '\0';
 	return (dst);
 }
-/*
-int main()
-{
-	char c1[] = "this";
-	char c2[] = "this";
-	printf("%s", memcpy(c1,c2,4));
-	// memcpy("this","this",4);
-}*/

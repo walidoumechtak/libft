@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 05:38:36 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/28 23:05:36 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 13:22:08 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,3 @@ t_list	*ft_lstnew(void *content)
 	ptr->next = NULL;
 	return (ptr);
 }
-
-/*
-int	main(void)
-{
-	t_list	*ptr;
-	char *p;
-	p = malloc(5 * sizeof(char));
-	p = "walid";
-	ptr = ft_lstnew(p);
-
-	printf("%p", ptr -> next);
-}*/

@@ -6,12 +6,11 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 17:01:44 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/26 10:30:20 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 10:35:24 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -26,10 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*
-int main()
-{
-	int c[] = {1,2,3,4};
-	ft_bzero(c, 4);
-	printf("%d", c[0]);
-}*/

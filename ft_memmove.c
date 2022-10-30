@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:46:57 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 22:03:13 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 23:37:01 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	 }
 	return (dst);
 }
+
+// int main()
+// {
+// 	char dst[] = "and walid and";
+// 	// char src[] = "";
+// 	printf("%s", memmove(dst + 4, dst, 8));
+// }

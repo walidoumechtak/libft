@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 21:27:52 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/26 18:43:18 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 14:36:45 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*str;
+	const char	*str;
 	size_t		i;
 
-	str = (unsigned char *)s;
+	str = (char *)s;
 	i = 0;
 	while (i < n)
 	{
@@ -26,4 +26,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		i++;
 	}
 	return (0);
+}
+
+
+int main()
+{
+	char c[] = "walid and med";
+	printf("%s", memchr(c,300, 9));
 }

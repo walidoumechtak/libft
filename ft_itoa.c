@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 15:30:11 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/26 13:15:38 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 13:09:19 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,19 +75,3 @@ char	*ft_itoa(int n)
 		n_to_array(to_int, n, count);
 	return (to_int);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	int n = 2147468848;
-	char *arr;
-
-	arr = ft_itoa(n);
-	int i = 0;
-	while (arr[i])
-	{
-		printf("%c", arr[i]);
-		i++;
-	}
-}*/

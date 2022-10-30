@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 21:42:52 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/28 16:30:59 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 10:26:33 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,15 +50,4 @@ int	ft_atoi(const char *str)
 		i++;
 	result = result_f((char *)str, i, signe);
 	return (result * signe);
-}
-
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char	*c = NULL;
-	//char c[] = "   --214";
-	//printf("me : %d \n", ft_atoi(c));
-	printf("not me : %d", atoi(c));
 }

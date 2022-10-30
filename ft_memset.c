@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 14:30:13 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/27 22:03:43 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 15:53:54 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,14 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+// int main()
+// {
+// 	int arr[] = {1,2,3};
+// 	ft_memset(arr, 255, 4);
+// 	printf("%lu", arr[0]);
+
+
+// 	// int a = 4294967295;
+// 	// printf("%d", a);
+// }

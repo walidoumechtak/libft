@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 22:11:07 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/28 23:07:10 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/29 13:22:23 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,30 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	t_list	*head;
-	char	*s1;
-	t_list	*current;
-	t_list	*new;
-
-	s1 = malloc(5 * sizeof(char));
-	s1 = "walid";
-	head = malloc(sizeof(t_list));
-	head -> content = s1;
-	head -> next = NULL;
-	current = malloc(sizeof(t_list));
-	current -> content = s1;
-	current -> next = NULL;
-	new = malloc(sizeof(t_list));
-	new -> content = s1;
-	new -> next = head;
-	current -> next = new;
-	
-	printf("%d", ft_lstsize(current));
-}
-*/
