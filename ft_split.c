@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 20:01:22 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/30 16:57:58 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 21:41:56 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static void	*free_split(char **split, int k)
 	int	i;
 
 	i = 0;
-	while (i <= k)
+	while (i < k)
 	{
 		free(split[i]);
 		i++;

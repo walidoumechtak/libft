@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:46:57 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/29 23:37:01 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 22:39:57 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			i++;
 		}
 	}
-	 else
-	 {
-	 	while (len--)
-	 		d[len] = s[len];
-	 }
+	else
+	{
+		while (len--)
+			d[len] = s[len];
+	}
 	return (dst);
 }
 

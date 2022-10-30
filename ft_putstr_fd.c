@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 15:22:04 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/29 22:30:50 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 22:40:26 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
-	
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{
@@ -27,7 +28,7 @@ void	ft_putstr_fd(char *s, int fd)
 /*
 #include <fcntl.h>
 
-int main()
+int	main(void)
 {
 	int fd;
 

@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 09:46:07 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/30 07:51:03 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 21:27:00 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		p[i] = sr[i];
 		i++;
 	}
-	p[i] = '\0';
 	return (dst);
 }
