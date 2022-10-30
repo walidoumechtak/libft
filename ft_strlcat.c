@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 10:21:57 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/28 16:24:31 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 20:57:36 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (len_src + len_dest);
 }
 
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char *d = NULL;
-	char s[] = "walid";
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+// 	char *d = NULL;
+// 	char s[] = "walid";
 
-	printf("%zu \n", ft_strlcat(d,s,0));
-	printf("%s", d);
-}
+// 	printf("%zu \n", ft_strlcat(d,s,0));
+// 	printf("%s", d);
+// }

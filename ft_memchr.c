@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 21:27:52 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/29 14:36:45 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/30 20:57:16 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 
-int main()
-{
-	char c[] = "walid and med";
-	printf("%s", memchr(c,300, 9));
-}
+// int main()
+// {
+// 	char c[] = "walid and med";
+// 	printf("%s", memchr(c,300, 9));
+// }

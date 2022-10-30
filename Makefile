@@ -6,7 +6,7 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/29 21:33:48 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/30 21:09:59 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,10 +69,10 @@ OBJSB = $(SRCSB:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
+	ar r $(NAME) $(OBJS)
 	
-$(OBJS): $(SRCS)
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o:%.c
+		$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: $(OBJS) $(OBJSB)
 	ar rc $(NAME) $(OBJS) $(OBJSB)
