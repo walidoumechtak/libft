@@ -6,7 +6,7 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 20:01:22 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/30 21:41:56 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/31 14:57:09 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@ static void	*free_split(char **split, int k)
 
 static char	**to_split(char *s, char c, char **split)
 {
-	int		i;
-	int		k;
-	int		p;
+	int	i;
+	int	k;
+	int	p;
 
 	k = 0;
 	i = 0;
@@ -81,7 +81,7 @@ char	**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	split = (char **) malloc((count_word(s, c) + 1) * sizeof(char *));
+	split = (char **)malloc((count_word(s, c) + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
 	split = to_split((char *)s, c, split);

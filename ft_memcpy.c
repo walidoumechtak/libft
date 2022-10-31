@@ -6,13 +6,11 @@
 /*   By: woumecht <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 09:46:07 by woumecht          #+#    #+#             */
-/*   Updated: 2022/10/30 21:27:00 by woumecht         ###   ########.fr       */
+/*   Updated: 2022/10/31 11:20:29 by woumecht         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -25,7 +23,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	sr = src;
 	p = dst;
 	if (p == sr)
-		return (ft_strdup(""));
+		return (p);
 	i = 0;
 	while (i < n)
 	{
