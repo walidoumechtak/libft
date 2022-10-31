@@ -6,7 +6,7 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/31 18:52:37 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/31 22:09:09 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ $(NAME): $(OBJS)
 
 bonus: $(OBJS) $(OBJSB)
 	ar rc $(NAME) $(OBJS) $(OBJSB)
-	$(CC) $(CFLAGS) -c $(SRCSB) -o $(OBJSB)
+	$(CC) $(CFLAGS) $(SRCSB) $(SRCS)
 clean:
 	rm -rf $(OBJS) $(OBJSB) 
 
