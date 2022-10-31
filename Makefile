@@ -6,7 +6,7 @@
 #    By: woumecht <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 18:12:09 by woumecht          #+#    #+#              #
-#    Updated: 2022/10/31 22:09:09 by woumecht         ###   ########.fr        #
+#    Updated: 2022/10/31 22:22:05 by woumecht         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,21 +69,18 @@ OBJSB = $(SRCSB:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar r $(NAME) $(OBJS)
+	ar rc $(NAME) $(OBJS)
 	
 %.o:%.c
 		$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: $(OBJS) $(OBJSB)
 	ar rc $(NAME) $(OBJS) $(OBJSB)
-	$(CC) $(CFLAGS) $(SRCSB) $(SRCS)
+	
 clean:
-	rm -rf $(OBJS) $(OBJSB) 
+	rm -rf $(OBJS) $(OBJSB)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-git:
-	git add . && git commit -m "hhh" && git push
